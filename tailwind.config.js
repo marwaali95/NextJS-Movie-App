@@ -12,11 +12,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-<<<<<<< HEAD
-      fontFamily:{montserrat:["var(--font-montserrat ) "]},
-=======
       fontFamily:{montserrat:["var(--font-montserrat) "]},
->>>>>>> c72ef85 (Add all my files)
       gridTemplateColumns:{
         fluid:'repeat(auto-fit,minmax(15rem,1fr))'
       }

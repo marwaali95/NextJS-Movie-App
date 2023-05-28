@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-export async function generateStaticParams() {
+/*export async function generateStaticParams() {
   const data = await fetch(
     `https://api.themoviedb.org/3/movie/upcoming?language=en-US`,
     {
@@ -16,7 +16,7 @@ export async function generateStaticParams() {
   return res.results.map((movie) => {
     movie: toString(movie.id);
   });
-}
+}*/
 export default async function MovieDetails({ params }) {
   const { movie } = params;
   const data = await fetch(`https://api.themoviedb.org/3/movie/${movie}`, {
