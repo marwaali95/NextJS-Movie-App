@@ -27,7 +27,7 @@ export default async function About() {
   if (!data) return <p>No Movies data</p>;
  console.log(data);*/
   const data = await fetch(
-    `https://api.themoviedb.org/3/movie/upcoming?language=en-US`,
+    `https://api.themoviedb.org/3/tv/top_rated?language=en-US`,
     {
       method: "GET",
       headers: {
@@ -49,10 +49,10 @@ export default async function About() {
         {res.results.map((movie: any) => (
           <Movie
             key={movie.key}
-            title={movie.title}
+            title={movie.name}
             id={movie.id}
             poster_path={movie.poster_path}
-            release_date={movie.release_date}
+            release_date={movie.first_air_date}
           />
         ))}
       </div>

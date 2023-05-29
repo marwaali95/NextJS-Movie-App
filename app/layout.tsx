@@ -26,11 +26,10 @@ export default function RootLayout({
         <nav>
           <center>
             <Image
-              width={100}
-              height={200}
-              src="/next.svg"
+              width={300}
+              height={300}
+              src="/favicon.ico"
               alt="Logo"
-              color="white"
             ></Image>
           </center>
         </nav>
