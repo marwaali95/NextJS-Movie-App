@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 /*export async function generateStaticParams() {
   const data = await fetch(
@@ -33,6 +34,11 @@ export default async function MovieDetails({ params }) {
 
   return (
     <div>
+      <div>
+        <Link href="/" className={"underline text-violet-50"}>
+          Back to Home Page
+        </Link>
+      </div>
       <div>
         <h2 className="text-2xl">{res.title}</h2>
         <h2 className="text-lg">{res.release_date}</h2>
